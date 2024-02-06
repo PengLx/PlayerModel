@@ -1,0 +1,83 @@
+Database:
+  # LOCAL, MONGODB
+  method: LOCAL
+  url:
+    client: 'mongodb://localhost:3307'
+    database: test
+    collection: playermodel
+
+Settings:
+  # 加入时赋予玩家模型
+  # Join apply model for player
+  join-apply: true
+  # 玩家默认模型
+  # Default model
+  player-model: player
+  # 玩家行走动画
+  # Walk animation
+  walk: walk
+  # 玩家跑步动画
+  # Run animation
+  run: run
+  # 玩家游泳动画
+  # Swim animation
+  swim: swim
+  # 玩家跳跃动画
+  # Jump animation
+  jump:
+    idle: jump
+    walk: walkjump
+    run: runjump
+  # 载具中静态动画
+  # IDLE animation in vehicle
+  vehicle-IDLE: vehicle-idle
+  # 载具中移动动画
+  # Move animation in vehicle
+  vehicle-move: vehicle-move
+  # 以下内容均为 —— SPONSOR ONLY 赞助者可用
+  # Following function are sponsor only
+  # 时装功能 开启后不隐藏玩家
+  # armor mode if true player will not hide
+  armor: false
+  # 物品识别方式 NBT MMOItems
+  # Item distinguish method NBT/MMOItems
+  item: NBT
+  # 玩家空手动画序列识别词
+  # Player hand nothing distinguish word
+  arm: hand
+  # 右手模型id
+  # Right-hand model id
+  right-hand: righthand
+  # 左手模型id
+  # Left-hand model id
+  left-hand: lefthand
+  # 玩家飞行动画
+  # Fly animation
+  fly: fly
+  # 玩家潜行移动动画
+  # Sneak animation
+  sneak: sneak
+  # 玩家死亡动画
+  # Death animation
+  death: death
+  # 玩家丢东西时的动画
+  # Drop animation
+  drop: drop
+  # 玩家使用桶时装水的动画
+  # Bukkit fill animation
+  bukkit-fill: bukkit
+  # 玩家将桶里的水倒出的动画
+  # Bukkit empty animation
+  bukkit-empty: bukkit
+  # 玩家使用桶捕捉生物的动画
+  # Bukkit catch entity animation
+  bukkit-entity: bukkit
+  # 玩家进入床的时候的动画
+  # Player enter Bed
+  enter-bed: bed
+  # 玩家离开床时的动画
+  # Player leave Bed
+  leave-bed: bed
+  # 玩家抛出钓鱼竿动画
+  # Player use fishing rod
+  go-fish: fishing

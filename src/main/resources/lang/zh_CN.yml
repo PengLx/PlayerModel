@@ -1,0 +1,5 @@
+no-sponsor: '您不是赞助人，只能使用部分模型动作。'
+error-model: '模型错误!'
+player-error-model: '玩家没有模型设置'
+error-network: '网络错误'
+command-script-not-found: 'Kether脚本未找到'

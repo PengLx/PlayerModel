@@ -1,0 +1,5 @@
+no-sponsor: 'You are not a sponsor and can only use some model actions'
+error-model: 'Model not found!'
+player-error-model: 'Player do not have any model'
+error-network: 'NetWork Error'
+command-script-not-found: 'Kether script was not found'

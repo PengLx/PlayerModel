@@ -1,0 +1,64 @@
+example:
+  # 识别词 玩家拿着物品时会根据物品的NBT/MMOItems物品类型进行识别
+  # 如果玩家为空手则是 Config 中设置的识别词
+  # 当 识别词 与 所得到的 判断词相符时 则会执行一下动画
+  # Distinguish word, if player hand somethings, plugin will according item's NBT/MMOItems type make a identify
+  # if player hand nothing it will back a word that in your config
+  # if Distinguish word = back word then will play animation
+  distinguish: hand
+  # 玩家多少秒不进行播放这个动画序列中的动画
+  # 动画就会回到第一序列的位置
+  # if player not play animation in following time
+  # the animation sequenece will go back to the first animation
+  cooldown: 3
+  # 是否根据玩家攻击速度调整动画播放速度及冷却时间
+  # 可不填 不填默认false
+  # If according player attack speed modify the play speed and cooldown time
+  # You can skip it, default is false
+  speed: true
+  animation:
+    # 判断词 填写需要播放的动作
+    # identify word , please write animation state
+  - key: sword1
+    # 冷却时间 在冷却时间内 不会播放任一以动画序列中的动画
+    # Cooldown time, in this time, player can't play animation state form any animation sequence
+    cooldown: 0.3
+    # 移动锁 cooldown 时间内不能移动
+    # 不填默认 false
+    # Move-lock, in cooldown time player can't move
+    # you can skip it, default is false
+    move-lock: true
+    # 调整倍率 计算公式如下: cooldown = 默认冷却 * 玩家攻速 * power
+    # 动画播放速度 = 玩家攻速 * power 默认为 1 即动画原速率
+    # 不填则遵守cooldown 以及 播放速率 1
+    #The calculation formula of adjustment magnification is as follows: cooldown = Default cooldown * player attack speed * power
+    #Animation playback speed = player attack speed * power defaults to 1, that is, the original animation speed
+    #If it is not filled in, follow the cooldown and playback rate 1
+    power: 1
+    # 动画淡入时间
+    # 不填默认为 0
+    # Transition tick before playing the animation
+    # If it is not filled int, it will be 0 by default
+    lerpin: 0
+    # 动画淡出时间
+    # 不填默认为 0
+    # Transition tick after playing the animation
+    # If it is not filled int, it will be 1 by default
+    lerpout: 1
+    # 是否是用来移除动画的
+    # 不填默认为 false
+    # Is this mechanic used for removing state
+    # If it is not filled int, it will be false by default
+    remove: false
+    # 是否无视淡入淡出立即播放动画
+    # 不填默认为 false
+    # Remove: Should the state be instantly removed without transition
+    # If it is not filled int, it will be false by default
+    ingorelerp: false
+    # 运行一个Kether脚本
+    # 不填不运行
+    # Run a script that from Kether
+    # you can skip it
+    kether: script
+  - key: sword2
+    cooldown: 0.3
